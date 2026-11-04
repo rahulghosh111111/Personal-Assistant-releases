@@ -1,6 +1,6 @@
-# Personal Assistant releases
+# Ira Assistant releases
 
-Signed, encrypted releases of Personal Assistant, a private voice assistant for Windows.
+Signed, encrypted releases of Ira Assistant, a private voice assistant for Windows.
 Installed copies update from here by themselves.
 
 **These files are not for public use.** They are encrypted and open only in a copy of the app that
