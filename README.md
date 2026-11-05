@@ -1,101 +1,308 @@
-<div align="center">
+ <div align="center">
 
-  <!-- Dynamic Security Header Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,19,24&height=200&section=header&text=Ira%20Assistant%20%E2%80%A2%20Releases&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Cryptographically%20Signed%20%26%20Encrypted%20OTA%20Distribution%20Channel&descFontSize=17&descAlignY=58" width="100%" alt="Ira Assistant Releases Banner" />
+<!-- Animated Header -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,40:0F172A,100:2563EB&height=230&section=header&text=IRA%20ASSISTANT&fontSize=65&fontColor=FFFFFF&fontAlignY=36&animation=fadeIn&desc=PRIVATE%20RELEASES%20%E2%80%A2%20SECURE%20OTA%20DISTRIBUTION&descSize=17&descAlignY=57" width="100%" />
 
-  <!-- Animated Typing SVG -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&pause=1200&color=38BDF8&center=true&vCenter=true&width=680&lines=Zero-Cloud+Voice-Locked+Desktop+Intelligence;Automated+Over-The-Air+(OTA)+Update+Endpoint;Cryptographically+Signed+%26+Invite-Gated+Payloads;100%25+On-Device+Inference+%E2%80%A2+Zero+External+API+Keys" alt="Ira Telemetry Status" />
+<!-- Typing Animation -->
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=19&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=750&height=55&lines=Your+Personal+Desktop+Intelligence.;Voice-Locked+%7C+Privacy-First+%7C+Offline.;Secure+Over-The-Air+Update+Infrastructure.;No+External+AI+API+Keys+Required." alt="Typing Animation" />
 
-  <br/>
+<br/>
 
-  <!-- Security & Platform Badges -->
-  <p align="center">
-    <img src="https://img.shields.io/badge/DISTRIBUTION-PRIVATE%20%2F%20INVITE--ONLY-F59E0B?style=for-the-badge&logo=github&logoColor=black" alt="Invite Only" />
-    <img src="https://img.shields.io/badge/PAYLOADS-ENCRYPTED%20%26%20SIGNED-10B981?style=for-the-badge&logo=letsencrypt&logoColor=white" alt="Encrypted & Signed" />
-    <img src="https://img.shields.io/badge/PLATFORM-WINDOWS%2010%2F11%20(x64)-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows" />
-    <img src="https://img.shields.io/badge/TEST%20COVERAGE-1%2C900%2B%20PASSING-6366F1?style=for-the-badge" alt="1900+ Tests" />
-  </p>
+<!-- Main Badges -->
+<p>
+<img src="https://img.shields.io/badge/ACCESS-INVITE%20ONLY-F59E0B?style=for-the-badge&logo=github&logoColor=black"/>
+<img src="https://img.shields.io/badge/SECURITY-ENCRYPTED%20%26%20SIGNED-10B981?style=for-the-badge&logo=letsencrypt&logoColor=white"/>
+<img src="https://img.shields.io/badge/PLATFORM-WINDOWS%2010%20%7C%2011-0078D6?style=for-the-badge&logo=windows&logoColor=white"/>
+</p>
+
+<p>
+<img src="https://img.shields.io/badge/TEST%20SUITE-1%2C900%2B%20PASSING-6366F1?style=flat-square"/>
+<img src="https://img.shields.io/badge/ARCHITECTURE-LOCAL--FIRST-06B6D4?style=flat-square"/>
+<img src="https://img.shields.io/badge/AI%20API%20KEY-NOT%20REQUIRED-22C55E?style=flat-square"/>
+</p>
+
+<br/>
+
+**A private release infrastructure for Ira Assistant.**
+
+*Secure distribution. Verified updates. Privacy-focused desktop intelligence.*
 
 </div>
 
 ---
 
+## 🔐 Restricted Access Notice
+
 > [!CAUTION]
-> ### 🔒 Restricted Access — Encrypted Binary Artifacts
-> **The release binaries hosted in this repository are NOT for public consumption.** 
-> All artifacts published here are **encrypted at rest** and **cryptographically signed**. They can only be decrypted and mounted by an existing, authenticated installation of **Ira Assistant** unlocked via a personal cryptographic invite key issued directly by the author. **Downloading these files manually yields nothing executable or usable.**
+> **PRIVATE DISTRIBUTION — AUTHORIZED USERS ONLY**
+>
+> The release binaries hosted in this repository are not intended for public consumption.
+>
+> Release artifacts are encrypted at rest and cryptographically signed. Decryption and installation require an authenticated Ira Assistant installation and a personal cryptographic invite key issued by the owner.
+>
+> Downloading individual release artifacts manually will not provide a usable application.
 
 ---
 
-### ⚡ Overview: What is Ira Assistant?
+## ⚡ 01. About Ira Assistant
 
-**Ira Assistant** is a private, local-first, voice-locked desktop assistant engineered for Windows. It wakes exclusively to its owner's biometric voiceprint, natively understands **English, Hindi, Bengali, Hinglish, and Banglish**, and orchestrates desktop applications, browser workflows, local files, and screen elements—with **zero cloud AI and no API keys**.
+**Ira Assistant** is a private, local-first, voice-locked desktop assistant engineered for Windows.
 
-| Core Pillar | Engineering Specification |
-| :--- | :--- |
-| **🎙️ Acoustic Pipeline** | Offline wake-word detection, Voice Activity Detection (VAD), real-time barge-in, and Whisper STT fine-tuned for Hindi & Bengali accents |
-| **🔐 Zero-Trust Security** | Biometric voiceprint lock, risk-rated action execution behind a unified safety gate, reversible undo journal, and encrypted local audit logs |
-| **🧠 Hybrid Intelligence** | Deterministic rules-first engine with local SLM (`Ollama`) fallback planning, paired with local OCR & computer vision for screen actuation |
-| **📦 Native Client** | Built with `Python`, `PySide6 (Qt)`, and `ONNX Runtime`, featuring a system tray controller, setup wizard, and 1,900+ automated tests |
+Designed to provide intelligent desktop interaction without depending on external cloud AI services or paid AI API keys.
 
----
+It combines offline voice recognition, command execution, local intelligence, computer vision, and desktop automation into one unified assistant.
 
-### 🔄 Automated OTA Update Architecture
+### ✨ Core Capabilities
 
-This repository serves strictly as the **automated Over-The-Air (OTA) update upstream** for authorized client installations. Installed copies poll this endpoint, verify signatures, and apply delta/full updates autonomously in the background.
+| Feature | Description |
+|:---|:---|
+| 🎙️ Voice Intelligence | Offline wake-word detection, voice activity detection and speech recognition |
+| 🌐 Multilingual Support | English, Hindi, Bengali, Hinglish and Banglish |
+| 🔐 Voice Authentication | Owner-specific voiceprint verification |
+| 🧠 Local Intelligence | Rules-first command processing with optional local SLM through Ollama |
+| 🖥️ Desktop Automation | Application launching, browser workflows and desktop interactions |
+| 👁️ Computer Vision | Local OCR and screen-based interaction |
+| 🛡️ Security Engine | Risk-based action execution and encrypted audit logs |
+| ↩️ Undo System | Reversible action journal for supported operations |
+| 📦 Native Desktop Client | Python, PySide6, Qt and ONNX Runtime |
+| 🔄 Auto Updates | Automated OTA update checking and installation |
 
-```text
-+-------------------------------------------------------------------------+
-|                   IRA ASSISTANT • OTA UPDATE PIPELINE                   |
-+-------------------------------------------------------------------------+
-
-  [ GitHub Releases Upstream ]
-               |
-               |  1. Polls latest release manifest & encrypted artifact
-               v
-  +-------------------------------------------------------------------+
-  |  Local Ira Client (Installed Windows Instance)                    |
-  |                                                                   |
-  |  ├── Step A: Signature Verification ──> Validates owner's key     |
-  |  ├── Step B: Invite Gate Check      ──> Confirms personal license |
-  |  ├── Step C: Payload Decryption     ──> Decrypts binary in memory |
-  |  └── Step D: Atomic Hot-Swap        ──> Applies self-verified app |
-  +-------------------------------------------------------------------+
-```
-
-> [!IMPORTANT]
-> **For Invited Users:** If the owner shared Ira Assistant with you, **do not download files from the Releases tab.** Always perform your initial installation using the dedicated bootstrap `.zip` package and personal `.invite` certificate sent directly to you. Once installed, your client will fetch future updates from this repository automatically.
-
----
-
-### 🛡️ Artifact Verification & Security Policy
-
-* **No Public Installer:** Raw bootstrap installers are distributed exclusively through private, out-of-band channels alongside recipient-bound invite files.
-* **Tamper Resistance:** Every release package is verified against an embedded public key prior to unpacking. Any modified or unsigned archive is rejected immediately by the updater daemon.
-* **Zero Telemetry:** Checking for updates via GitHub's release API transmits zero personal data, voice logs, or machine identifiers.
-
----
-
-### ⚖️ Copyright & Proprietary License
-
-**Copyright © 2026 [Rahul Ghosh](https://github.com/rahulghosh111111). All rights reserved.**
-
-```text
-PROPRIETARY SOFTWARE NOTICE:
-No permission is granted to use, copy, reverse-engineer, decompile, modify, merge, 
-publish, distribute, sublicense, or share this software or its encrypted release 
-artifacts, in whole or in part, without explicit written authorization from the 
-copyright holder.
-
-A cryptographically signed invite file issued by the owner constitutes a non-transferable, 
-revocable license solely for the individual named within that invite, strictly for their 
-personal, non-commercial use.
-```
-
----
+<br/>
 
 <div align="center">
-  <a href="https://github.com/rahulghosh111111">
-    <img src="https://img.shields.io/badge/←%20Back%20to%20Rahul%20Ghosh's%20Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="Back to Profile" />
-  </a>
+
+<img src="https://img.shields.io/badge/01-VOICE%20INTELLIGENCE-38BDF8?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/02-LOCAL%20INTELLIGENCE-8B5CF6?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/03-SECURE%20EXECUTION-10B981?style=for-the-badge"/>
+
+</div>
+
+---
+
+## 🧬 02. Technology Stack
+
+<div align="center">
+
+### Core Technologies
+
+<img src="https://skillicons.dev/icons?i=python,qt,windows,github,git&theme=dark" />
+
+### Intelligence & Processing
+
+<img src="https://img.shields.io/badge/ONNX%20Runtime-005CED?style=for-the-badge&logo=onnx&logoColor=white"/>
+<img src="https://img.shields.io/badge/Ollama-111111?style=for-the-badge&logo=ollama&logoColor=white"/>
+<img src="https://img.shields.io/badge/Whisper-412991?style=for-the-badge&logo=openai&logoColor=white"/>
+
+</div>
+
+| Layer | Technology |
+|:---|:---|
+| Programming Language | Python |
+| Desktop Interface | PySide6 / Qt |
+| Machine Learning Runtime | ONNX Runtime |
+| Speech Recognition | Whisper |
+| Local Intelligence | Ollama (Optional) |
+| Computer Vision | Local OCR and vision components |
+| Distribution | GitHub Releases |
+| Security | Cryptographic signing and encrypted artifacts |
+| Testing | Automated test suite |
+
+---
+
+## 🔄 03. Automated OTA Update Architecture
+
+This repository serves as the **private OTA update upstream** for authorized Ira Assistant installations.
+
+Installed clients periodically check for new releases, validate update signatures, verify authorization and apply eligible updates.
+
+### Update Lifecycle
+
+```mermaid
+flowchart TD
+    A([GitHub Releases]) --> B[Release Manifest]
+    B --> C[Installed Ira Client]
+    C --> D{New Update Available?}
+
+    D -->|No| E[Continue Normal Operation]
+    D -->|Yes| F[Download Encrypted Artifact]
+
+    F --> G[Cryptographic Signature Verification]
+    G --> H{Signature Valid?}
+
+    H -->|No| I[Reject Update]
+    H -->|Yes| J[Verify Invite Authorization]
+
+    J --> K{Authorized?}
+    K -->|No| L[Reject Installation]
+    K -->|Yes| M[Decrypt Payload]
+
+    M --> N[Validate Package]
+    N --> O[Atomic Update Installation]
+    O --> P([Restart Updated Application])
+
+    style A fill:#1e293b,color:#fff
+    style P fill:#065f46,color:#fff
+    style I fill:#7f1d1d,color:#fff
+    style L fill:#7f1d1d,color:#fff
+```
+
+### Update Security Pipeline
+
+| Stage | Operation | Purpose |
+|:---|:---|:---|
+| 01 | Release Detection | Detect available versions |
+| 02 | Signature Verification | Validate artifact authenticity |
+| 03 | Invite Verification | Confirm installation authorization |
+| 04 | Payload Decryption | Decrypt authorized artifacts |
+| 05 | Package Validation | Check package integrity |
+| 06 | Atomic Installation | Apply the verified update |
+| 07 | Application Restart | Launch the updated client |
+
+> [!IMPORTANT]
+> **For Invited Users**
+>
+> If you have received an official Ira Assistant invitation, do not download release artifacts directly from the Releases tab.
+>
+> Your initial installation must use the dedicated bootstrap ZIP package and personal `.invite` certificate provided by the owner.
+>
+> After installation, the application can retrieve eligible future updates automatically.
+
+---
+
+## 🛡️ 04. Security & Privacy Architecture
+
+Security is a fundamental part of Ira Assistant's distribution infrastructure.
+
+### Security Principles
+
+- **Private Distribution:** Access to installation packages is restricted to authorized recipients.
+- **Cryptographic Verification:** Release packages must pass signature verification before installation.
+- **Encrypted Artifacts:** Release payloads are encrypted at rest.
+- **Invite-Based Authorization:** Personal invite certificates control installation authorization.
+- **Local Processing:** Voice processing and supported intelligence operations run locally.
+- **Privacy-Focused Design:** No personal voice recordings or machine identifiers are intentionally transmitted through the update-checking process.
+- **Action Safety:** Risk-based execution controls protect sensitive desktop operations.
+
+### Zero-Cloud AI Philosophy
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/VOICE%20PROCESSING-LOCAL-22C55E?style=flat-square"/>
+<img src="https://img.shields.io/badge/COMMAND%20ENGINE-LOCAL-22C55E?style=flat-square"/>
+<img src="https://img.shields.io/badge/EXTERNAL%20AI%20API-NOT%20REQUIRED-22C55E?style=flat-square"/>
+
+</div>
+
+Ira Assistant is designed to minimize external dependencies and keep supported intelligence workflows on the user's device.
+
+---
+
+## 📦 05. Release Distribution
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/RELEASE%20CHANNEL-PRIVATE-7C3AED?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/UPDATE%20SYSTEM-AUTOMATED-0EA5E9?style=for-the-badge"/>
+
+</div>
+
+### Distribution Model
+
+| Component | Distribution |
+|:---|:---|
+| Bootstrap Installer | Private distribution |
+| Personal Invite Certificate | Individually issued |
+| Encrypted Release Artifacts | GitHub Releases |
+| Update Manifest | OTA endpoint |
+| Update Verification | Client-side verification |
+| Installation | Authorized client |
+
+### Release Workflow
+
+```text
+DEVELOPMENT
+    |
+    v
+TESTING & VALIDATION
+    |
+    v
+RELEASE PACKAGE GENERATION
+    |
+    v
+ENCRYPTION & SIGNING
+    |
+    v
+GITHUB RELEASE PUBLICATION
+    |
+    v
+AUTHORIZED CLIENT UPDATE
+```
+
+---
+
+## 📊 06. Project Quality
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Automated%20Tests-1%2C900%2B%20Passing-6366F1?style=for-the-badge&logo=pytest&logoColor=white"/>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/Design-Privacy%20First-0EA5E9?style=flat-square"/>
+<img src="https://img.shields.io/badge/Architecture-Modular-8B5CF6?style=flat-square"/>
+<img src="https://img.shields.io/badge/Distribution-OTA-10B981?style=flat-square"/>
+
+</div>
+
+---
+
+## ⚖️ 07. Copyright & Proprietary License
+
+**Copyright © 2026 Rahul Ghosh. All Rights Reserved.**
+
+Ira Assistant and its associated source code, architecture, encrypted release artifacts, and distribution infrastructure are proprietary.
+
+```text
+PROPRIETARY SOFTWARE NOTICE
+
+No permission is granted to use, copy, reproduce, reverse-engineer,
+decompile, modify, merge, publish, distribute, sublicense, or share
+this software or its encrypted release artifacts, in whole or in part,
+without explicit written authorization from the copyright holder.
+
+A cryptographically signed invite file issued by the owner constitutes
+a non-transferable, revocable license solely for the individual named
+within that invite, strictly for their personal, non-commercial use.
+
+Unauthorized redistribution or use is prohibited.
+```
+
+---
+
+## 👨‍💻 08. Project Maintainer
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/DEVELOPED%20BY-RAHUL%20GHOSH-38BDF8?style=for-the-badge"/>
+
+<br/><br/>
+
+**Rahul Ghosh**
+
+*Developer & Creator of Ira Assistant*
+
+<br/>
+
+<a href="https://github.com/rahulghosh111111">
+<img src="https://img.shields.io/badge/GitHub-Visit%20Profile-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<br/><br/>
+
+**Building private, intelligent and secure desktop experiences.**
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,50:0F172A,100:2563EB&height=120&section=footer" width="100%"/>
+
 </div>
