@@ -4,7 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,40:0F172A,100:2563EB&height=230&section=header&text=IRA%20ASSISTANT&fontSize=65&fontColor=FFFFFF&fontAlignY=36&animation=fadeIn&desc=PRIVATE%20RELEASES%20%E2%80%A2%20SECURE%20OTA%20DISTRIBUTION&descSize=17&descAlignY=57" width="100%" />
 
 <!-- Typing Animation -->
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=19&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=750&height=55&lines=Your+Personal+Desktop+Intelligence.;Voice-Locked+%7C+Privacy-First+%7C+Offline.;Secure+Over-The-Air+Update+Infrastructure.;No+External+AI+API+Keys+Required." alt="Typing Animation" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=19&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=750&height=55&lines=Your+Personal+Desktop+Intelligence.;Voice-Locked+%7C+Privacy-First+%7C+Offline.;Secure+Over-The-Air+Update+Infrastructure.;No+External+AI+API+Keys+Required.;Coming+Soon+New Year+2027.;...Microsoft Store..." alt="Typing Animation" />
 
 <br/>
 
