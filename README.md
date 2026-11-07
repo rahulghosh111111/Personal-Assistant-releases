@@ -1,310 +1,274 @@
-<div align="center">
+<div align="center"><img src="assets/header.svg" alt="Ira Assistant — voice-controlled desktop assistant for Windows" width="100%"><img src="assets/typing.svg" alt="Say “open assistant” in your own voice. Supports English, Hindi, Bengali and mixed-language commands." width="100%"><p>
+  <img src="https://img.shields.io/badge/platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Platform: Windows">
+  <img src="https://img.shields.io/badge/languages-English%20%7C%20Hindi%20%7C%20Bengali-f0abfc?style=for-the-badge" alt="Languages: English, Hindi and Bengali">
+  <img src="https://img.shields.io/badge/processing-local%20by%20default-2EA44F?style=for-the-badge" alt="Processing: local by default">
+  <img src="https://img.shields.io/badge/access-invite--only-8A2BE2?style=for-the-badge" alt="Access: invite-only">
+  <img src="https://img.shields.io/badge/updates-signed%20releases-F39C12?style=for-the-badge" alt="Updates: signed releases">
+</p><img src="assets/ticker.svg" alt="Voice access · English, Hindi and Bengali · Local speech processing · AES-256-GCM · Screen interaction · Undo · Windows Hello · Reminders · Plugins · Signed updates" width="100%"></div>[!IMPORTANT]
+Ira Assistant is distributed privately. The release files in this repository are not intended for unrestricted public use. Access is limited to people who have received a valid invitation from the owner. Releases are described as signed and encrypted; the application should reject packages that fail its verification checks.
 
-<img src="assets/header.svg" alt="Ira Assistant: voice-locked desktop assistant for Windows" width="100%">
+[!TIP]
+If the owner has invited you: install Ira using the ZIP file shared with you. Do not use a source-code checkout as a substitute for the packaged release. Once installed, the application can check this release channel for updates, provided update access is configured for your copy.
 
-<img src="assets/typing.svg" alt="Say “open assistant” in your own voice. English, Hindi, Bengali or a mix. Nothing you say leaves your PC." width="100%">
+Contents
+Getting started	Using Ira	Security and maintenance
+Meet Ira	How it works	Safety and privacy
+Installation	Voice commands	Updates
+First-time setup	Commands while a task runs	Where your data is stored
+The app interface	Screen interaction	Known limitations
+Proactive features	Plugins	Copyright
 
-<p>
-<img src="https://img.shields.io/badge/platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Platform: Windows">
-<img src="https://img.shields.io/badge/speaks-English%20%C2%B7%20Hindi%20%C2%B7%20Bengali-f0abfc?style=for-the-badge" alt="Speaks English, Hindi, Bengali">
-<img src="https://img.shields.io/badge/runs-100%25%20on%20your%20PC-2EA44F?style=for-the-badge" alt="Runs 100% on your PC">
-<img src="https://img.shields.io/badge/access-invite--only-8A2BE2?style=for-the-badge" alt="Access: invite-only">
-<img src="https://img.shields.io/badge/updates-signed%20%26%20automatic-F39C12?style=for-the-badge" alt="Updates: signed and automatic">
-</p>
 
-<img src="assets/ticker.svg" alt="Voice-locked · English, Hindi, Bengali · Runs on your PC · AES-256-GCM · Click anything by name · Undo last 20 · Windows Hello · Morning brief · Plugins · Signed updates" width="100%">
+🎙️ Meet Ira
+Ira Assistant is a voice-controlled desktop assistant for Windows. It can start in the background with Windows and wait for your configured wake phrase. When it recognises the enrolled user's voice, it can respond:
+“Yes boss, I'm here to listen to you.”
 
-</div>
+Ira supports English, Hindi, Bengali and mixed-language commands. Depending on the enabled features and permissions, it can open applications, control media and volume, type text, interact with on-screen controls, create reminders, and provide a morning brief.
 
-> [!IMPORTANT]
-> **This is the private release channel for Ira Assistant. The files here are not for public use.**
-> Every release is signed and encrypted, and opens only in a copy of Ira whose owner has invited you (an invite file, sent to you personally). Downloading them gives you nothing usable.
-
-> [!TIP]
-> **Did the owner share Ira with you?** Install it from the **zip they sent you**, not from here. After that, your copy updates itself from this page. You never need to come back.
-
-<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
-
-## 📑 Contents
-
-| | | |
-|---|---|---|
-| 🎙️ [Meet Ira](#️-meet-ira) | 📦 [Install](#-install) | 🔄 [How it works](#-how-it-works) |
-| 🗣️ [Talking to it](#️-talking-to-it) | 🖱️ [Clicking anything](#️-clicking-anything-on-screen) | ⏱️ [While something runs](#️-while-something-is-running) |
-| 🖥️ [The app](#️-the-app) | 🔒 [Safety and privacy](#-safety-and-privacy) | 🚀 [Updates](#-updates-from-this-page) |
-| 📁 [Your data](#-where-your-data-lives) | 🧭 [Not yet](#-not-yet) | ©️ [Copyright](#️-copyright) |
-
-<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
-
-## 🎙️ Meet Ira
-
-**Ira** is a voice-locked desktop assistant for Windows. It starts quietly with Windows. Say **“open assistant”** and it answers **“Yes boss, I'm here to listen to you”**. Your voiceprint is the key. Then talk to it in **English, Hindi, Bengali or a mix of them** until you say **“quit”**.
-
-It opens apps, plays music, sets the volume, types, clicks buttons by name, sets reminders, reads you a morning brief and more. **Speech recognition, the voices and the voiceprint all run on your PC. Nothing you say leaves it.**
-
-<div align="center">
-
-<img src="Ira%20Assistant.png" alt="Ira Assistant window" width="88%">
-
+Speech recognition, voice output and voiceprint matching are designed to run locally. Some features—such as weather, web search, email, calendar integrations and online content—necessarily communicate with their respective services. Review the privacy and plugin settings before enabling connected features.
+<div align="center"><img src="Ira%20Assistant.png" alt="Ira Assistant application window" width="88%">
 <sub><b>Ira Assistant</b></sub>
 
-<br><br>
 
-<img src="ira%20still%20there.png" alt="Ira still there" width="88%">
 
-<sub><b>Ira, still there</b></sub>
-
-</div>
-
-<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
-
-## 📦 Install
-
-1. Unzip the file the owner sent you.
-2. Double-click **`installer\Install.bat`**. You **don't need administrator rights**.
-3. It installs on the signed python.org Python with hash-checked packages, and adds Start menu and desktop shortcuts and an entry in **Settings › Apps**.
-
-To uninstall, use **Settings › Apps**. It asks whether to keep your data.
-
-**On first start, the setup wizard** walks you through:
-
-```text
-🎤 microphone  →  🌐 language  →  ⬇️ model downloads  →  🗣️ your voiceprint (read a few sentences aloud)
-              →  🔑 optional typed passphrase  →  🪪 Windows Hello test
-```
-
-Run it again any time from **tray › Set up…**.
-
-<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
-
-## 🔄 How it works
-
+<img src="ira%20still%20there.png" alt="Ira Assistant in its listening state" width="88%"><sub><b>Ira, still there</b></sub>
+</div>📦 Installation
+1. Extract the ZIP file shared with you.
+2. Open the extracted folder.
+3. Double-click installer\Install.bat.
+4. Follow the installer prompts. The standard installation is designed not to require administrator rights.
+5. When installation finishes, launch Ira from the desktop shortcut, Start menu or system tray.
+The installer is described as using a signed python.org Python runtime and hash-checked packages. It also creates Start menu and desktop shortcuts and registers the application under Settings → Apps.
+Uninstalling
+Open Settings → Apps → Installed apps, select Ira Assistant and choose Uninstall. The uninstaller asks whether you want to keep your application data.
+First-time setup
+On the first launch, the setup wizard guides you through the following steps:
+Microphone
+    ↓
+Language
+    ↓
+Required model downloads
+    ↓
+Voiceprint enrolment (read the displayed sentences)
+    ↓
+Optional typed passphrase
+    ↓
+Windows Hello test
+You can run setup again from System tray → Set up….
+🔄 How it works
 <div align="center">
-<img src="assets/conversation.svg" alt="Animated conversation: you say open assistant, Ira answers Yes boss; the TV is ignored; you say bye ira and it goes back to waiting." width="100%">
-</div>
+<img src="assets/conversation.svg" alt="Ira waits for its wake phrase, responds to the enrolled user, and returns to waiting after the quit command." width="100%">
+</div>Typical interaction:
+Sign in to Windows
+    └─ Ira starts in the background and displays its tray icon.
 
-```text
-sign in to Windows ──► it starts in the background: no window, no sound, just the tray icon
-"open assistant" (or "ira kholo" / "ira khulo"), in your voice
-      ──► "Yes boss, I'm here to listen to you."
-      ──► it listens all the time, no wake phrase needed
-            your voice + a command      ──► done, within about a second or two
-            someone else / the TV       ──► ignored, silently
-            you chatting with a friend  ──► ignored, silently ("Not a command" in the status line)
-"quit" / "bye ira" / "stop bro" / Ctrl+L, or the laptop goes to sleep
-      ──► back to waiting quietly for "open assistant"
-```
+Say the configured wake phrase
+    └─ “open assistant” (also supports configured variants such as “ira kholo”)
+        └─ Ira responds and enters its unlocked listening state.
 
+Speak a command
+    ├─ Recognised command → Ira performs the action, subject to safety checks.
+    ├─ Other speaker / TV audio → should be rejected by voice matching.
+    └─ Unclear speech → Ira may ask you to repeat or clarify.
+
+Say “quit”, “bye ira”, “stop bro” or press Ctrl+L
+    └─ Ira leaves the active listening state and returns to waiting.
 <details>
-<summary><b>🔓 Waking, staying, listening and going offline</b></summary>
-<br>
-
-- **Waking it:** while it waits, it says nothing to anyone, whatever is said in the room. Only “open assistant” in your voice wakes it. A near miss gets one more try (“Almost. Say a little more.”). Someone else saying the phrase counts as a failed attempt, and **3 failures block voice unlock for 2 minutes**, even across restarts. Change the phrase, greeting and mode in **Settings › Security** and **General**.
-- **Staying with you:** it doesn't lock itself when you go quiet (Settings › General › “Lock after this many seconds of quiet”, 0 = never).
-- **The window:** starting with Windows shows no window. Open it from the tray, the Start menu or the orb.
-- **Listening:** while unlocked it listens continuously and acts only on your voice and only on commands. Settings › Voice › “Listening while unlocked: wake” switches back to “hey ira” / **Ctrl+Alt+J** with a short follow-up window.
-- **Interrupting:** start talking while it speaks (with a headset), or say “hey ira” (on speakers).
-- **Privacy mode:** tray › Mute microphone, or **Ctrl+Shift+P**, stops listening until you turn it back on.
-- **Offline:** everything local keeps working, by voice and by typing. Commands that need the internet (weather, web search, email) answer “I'm offline”.
-
-</details>
-
-### ⚡ Speed
-
+<summary><b>Wake, listening, privacy mode and offline behaviour</b></summary>- Wake phrase: While locked, Ira waits for the configured wake phrase and enrolled voice. A near-match may prompt you to try again. The README's current behaviour specifies that three failed voice-unlock attempts temporarily block voice unlock for two minutes, including across restarts.
+- Stay unlocked: Configure Settings → General → Lock after this many seconds of quiet. A value of 0 means Ira does not automatically lock due to silence.
+- Open the window: Ira can start without opening its main window. Use the tray icon, Start menu or floating orb to show it.
+- Listening mode: While unlocked, continuous listening can be enabled. Alternatively, use the wake phrase “hey ira” or Ctrl+Alt+J to start a short listening window.
+- Interrupt speech: Use a headset for more reliable interruption while Ira is speaking. The configured interruption phrase may also be used.
+- Privacy mode: Choose Tray → Mute microphone or press Ctrl+Shift+P to pause microphone listening. Turn the microphone back on when you are ready.
+- Offline use: Local features remain available. Features that need an internet connection—such as weather, web search or connected email—may report that Ira is offline.
+</details>⚡ Response speed
 <div align="center">
-<img src="assets/speed.svg" alt="First sound of the reply after your last word: English about 1.2 s, Hindi about 2.1 s, Bengali about 2.6 s, on an i7-1165G7 laptop." width="100%">
-</div>
+<img src="assets/speed.svg" alt="Reported response latency: English approximately 1.2 seconds, Hindi approximately 2.1 seconds and Bengali approximately 2.6 seconds on an i7-1165G7 laptop." width="100%">
+</div>The project currently reports the following first-response timings on an Intel Core i7-1165G7 laptop:
+Language	Reported time
+English	~1.2 seconds
+Hindi	~2.1 seconds
+Bengali	~2.6 seconds
 
-It first uses a fast recognition model and re-checks with the more accurate one only if the fast model didn't find a command. It treats **0.45 s of silence** as the end of your sentence. Bengali is the slowest of the three because of its voice.
 
-<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
+These are reported test results, not guaranteed timings. Actual performance depends on the computer, microphone, model availability and background workload.
 
-## 🗣️ Talking to it
-
+Ira first tries a faster recognition model and can use a more accurate model when the first pass does not identify a command. The configured silence threshold is 0.45 seconds.
+🗣️ Voice commands
 <div align="center">
-<img src="assets/phrases.svg" alt="Example phrases: notepad khol do, put some music on, awaj komao, kitne baje hain, ajker abohawa kemon, click subscribe, undo that, stop bro" width="100%">
-</div>
+<img src="assets/phrases.svg" alt="Examples of English, Hindi and Bengali voice commands." width="100%">
+</div>Ira is designed to understand natural phrasing rather than requiring one exact sentence. Examples:
+English	Hindi / Hinglish	Bengali
+Open Chrome · Close it · Switch to Word	Notepad khol do · Chrome band karo	Notepad kholo · Chrome bondho koro
+Turn it down · Make it louder · Mute	Awaaz thoda kam karo · Awaaz badha do	Awaj komao · Awaj barao
+Play music · Skip this song · Pause	Gaana laga do · Agla gaana chalao · Gaana band karo	Gaan chalao · Porer gaan · Gaan bondho koro
+What time is it? · What's the weather?	Kitne baje hain? · Aaj mausam kaisa hai?	Kota baje? · Ajker abohawa kemon?
+Remind me in 10 minutes to stretch	Das minute baad mujhe stretch karne ki yaad dilana	—
+How are you? · Who are you? · Good night	Kaise ho? · Tum kaun ho? · Shubh raatri	Kemon acho? · Tomar naam ki? · Shubho ratri
 
-Everyday phrasing works in all three languages, including casual and rural spellings:
 
-| 🇬🇧 English | 🇮🇳 Hindi / Hinglish | 🇧🇩 Bengali |
-|---|---|---|
-| open chrome · close it · switch to word | notepad khol do · chrome band karo | notepad kholo · chrome bondho koro |
-| turn it down a bit · make it louder · mute | awaz thoda kam karo · awaaj badha do | awaj komao · awaj barao |
-| put some music on · skip this song · pause | gaana laga do · agla gaana chalao · gaana band karo | gaan chalao · porer gaan · gaan bondho koro |
-| what time is it right now · what's the weather | kitne baje hain · aaj mausam kaisa hai | kota baje · ajker abohawa kemon |
-| remind me in 10 minutes to stretch | das minute baad paani peene ki yaad dilana | — |
-| how are you · who are you · well done · good night | kaise ho · kya haal hai · tum kaun ho · bahut badhiya | kemon acho · ki khobor · tomar naam ki · khub bhalo |
+Natural phrasing and follow-ups
+- Say it your way (since 1.10): Ira can interpret supported commands expressed in different ways. If confidence is low, it may ask what you meant. Confirmed corrections can be used to improve phrase handling.
+- Follow-ups and references such as “it” (since 1.11): After a response, Ira keeps a short follow-up window (currently described as eight seconds). For example:
+  - “Open Notepad” → “Close it”
+  - “Search for flights to Goa” → “Open the second one”
+  - “Again”, “phir se” or “abar”
+  - “What did you just open?”
+  - “Forget this conversation”
+- Saying “thanks”, “bas” or “thik ache” ends the follow-up window.
+File search and document help
+Available since 1.12; disabled by default.
 
-- 💡 **Say it your way** *(since 1.10)*: you don't need the exact words. It understands “Can you lower the sound”, “गाना थोड़ी देर रोक दो” or “make this window full screen” by meaning, in a few milliseconds. If it's only fairly sure, it asks “Did you mean…?” and remembers your phrase when you say yes.
-- 🔁 **Follow-ups and “it”** *(since 1.11)*: after a reply it keeps listening for 8 seconds. Examples: “open notepad” … “close it”; “search for flights to goa” … “open the second one” / “দ্বিতীয়টা খোলো”; “message ravi on whatsapp see you at five” … “do the same for rahul”; “again” / “phir se” / “abar”; “what did you just open?”; “forget this conversation”. Saying “thanks”, “bas” or “thik ache” ends the follow-up.
-- 📂 **Your files** *(since 1.12, off until you switch it on in Settings › Files)*: “find the PDF about my car insurance” gives you the top 3 files, then say “open the first one”. Also: “what's the due date on my electricity bill?”, or “summarise this page / this PDF / my unread emails”, then “… in one line” or “… in detail”.
-
+Enable this feature in Settings → Files. Example commands:
+- “Find the PDF about my car insurance.”
+- “Open the first one.”
+- “What's the due date on my electricity bill?”
+- “Summarise this page / this PDF / my unread emails.”
+- Follow up with “in one line” or “in detail”.
+The file index is subject to the permissions and exclusions described in Safety and privacy.
 <details>
-<summary><b>➕ More commands</b></summary>
-<br>
+<summary><b>More command examples</b></summary>- Take a screenshot.
+- Open YouTube and play a song.
+- Search the web or search for flights.
+- Read my emails.
+- Send an email to a saved contact.
+- Type text or type into the search box.
+- Click a button by its label.
+- Tick “Remember me”.
+- Minimise all windows.
+- Reopen closed tabs.
+- Take a note.
+- Lock the computer.
+- Sleep, shut down, restart or sign out (confirmation and Windows Hello may be required).
+- Undo the last supported action.
+- Turn on privacy mode.
+- Stop the current task.
+Say “help” for the in-app command list. You can add phrases under Settings → Custom commands. Depending on the configured action type, a custom command can open an application or website, run a shell command, or execute a sequence of steps.
 
-take a screenshot · open youtube and play lofi · search for cheap flights · read my emails · send email to [name] · type hello · click OK · type hello into the search box · tick remember me · minimize all · reopen closed tabs · take a note … · lock computer · sleep · shutdown / restart / log off *(confirmed, with Windows Hello)* · undo that · privacy mode · **stop bro**
+Commands Ira does not understand may appear in Activity → This week, where supported entries can be reviewed and turned into test cases.
+</details>⏱️ Commands while a task runs
+Described as available since 2026-11-03.
 
-Say **help** for the full list. Add your own phrases in **Settings › Custom commands**: open an app or a website, run a shell command, or a sequence of steps. Phrases it gets wrong show up in **Activity › This week**, where you can turn them into test cases.
+Ira can continue listening while a command is running. New commands are placed in a queue, subject to the current task and timeout rules.
+Say	Expected behaviour
+Stop · Cancel · “ruko” · “bas”	Stops the running command, clears queued commands and stops speech. If no task is running, “stop” may pause media instead.
+Stop talking · Quiet · “chup”	Stops spoken output while leaving the current task running.
+Give another command within 10 seconds	Adds the new command to the queue.
+Give another command after 10 seconds	Ira may ask whether to skip the current task and start the new one.
+Stop bro · Quit	Ends the active session and returns Ira to its waiting state.
 
-</details>
 
-<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
+A task that exceeds the configured 75-second limit is stopped and reported. Actual cancellation behaviour depends on whether the underlying operation supports interruption.
+🖱️ Screen interaction
+Described as available since 2026-11-03.
 
-## ⏱️ While something is running
+Ira can interact with supported controls in desktop applications and browsers. The documented lookup order is:
+1. Windows UI Automation.
+2. Page-level interaction in Ira's own browser, where applicable.
+3. OCR for interfaces that cannot be accessed through the preceding methods.
+Say	Expected behaviour
+“Click how to learn”	Looks for a matching label, such as “How to learn Python in 30 days”.
+“Click subscribe” when there are two matches	Reports the ambiguity and asks you to choose the intended control.
+“Click the second button” · “Click the last tab”	Selects a control by its position when the order is clear.
+“Click the search bar”	Looks for a field labelled Search.
+“In Spotify, click play”	Brings Spotify to the foreground before attempting the action.
+“Click profile” when no exact match is found	May offer possible matches for you to choose from.
+“Delete” · “Pay” · “Send” · “Uninstall” · “Sign out”	Requires confirmation before proceeding.
 
-*Since 2026-11-03.* It keeps listening while a command runs, and new commands wait their turn in a queue.
 
-| Say | What happens |
-|---|---|
-| **stop** · **cancel** · ruko · bas | Stops the running command, empties the queue and stops talking: “Okay, stopped.” With nothing running, “stop” pauses the music. |
-| **stop talking** · **quiet** · shut up · chup | Stops the talking only. The command carries on. |
-| a new command, under 10 s into the last one | “Got it, I'll do that next.” |
-| a new command, 10 s or more into the last one | “I'm still working on your last command: … Skip it and start …? Yes or no?” |
-| **stop bro** · quit | Stops everything and goes to sleep. |
+When multiple controls match, Ira may number or highlight them while waiting for your selection. Destructive or consequential actions should always be reviewed before confirmation.
+🖥️ The app interface
+Area	Description
+Main window	Conversation history, typed-command input (or passphrase input while locked), and action cards. Supported actions may offer an Undo control.
+Floating orb	Indicates listening, thinking and speaking states, and displays microphone activity. Click to talk, double-click to open the main window, or drag to move it. It is designed to stay out of the way of full-screen applications.
+System tray	Show the window, mute the microphone, lock Ira, show the orb, run setup or quit.
+Activity	Displays recorded actions and provides filters. This week highlights unrecognised commands, corrections and slow operations.
+Settings	Includes General, Voice, Microphone, Proactive, Security, Privacy, Updates, Safety, Custom commands, Contacts and Plugins. The interface supports English, Hindi and Bengali, with light and dark themes.
 
-A command that runs longer than **75 seconds** is stopped, and you're told.
 
-<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
-
-## 🖱️ Clicking anything on screen
-
-*Since 2026-11-03.* This works in any app and in browsers. It tries **UI Automation** first, then the page itself in the assistant's own browser, then **OCR** for apps that can't be read any other way.
-
-| Say | What happens |
-|---|---|
-| click **how to learn** | Clicks “How to learn Python in 30 days”. The first three words of a label are enough, and close spellings work (“log in” = “login”, “2” = “two”). |
-| click subscribe, *when there are two* | “I found 2 'Subscribe' buttons: one at the top and one at the bottom. Which one?” While you decide, the buttons are numbered on screen. Answer *top / bottom / first / number 2 / the one in the sidebar*… |
-| click **the second button** · **the last tab** | By position only. |
-| click **the search bar** | The field called Search. |
-| **in Spotify click play** | Brings Spotify to the front first. |
-| click something it can't find | “I couldn't find 'profile'. Did you mean A, B or C?” Your answer is clicked and remembered for that app. |
-| click **Delete, Pay, Send, Uninstall, Sign out…** | Asks “Are you sure? Yes or no.” first. |
-
-<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
-
-## 🖥️ The app
-
-| | |
-|---|---|
-| 🪟 **Window** | The conversation, a box for typed commands (or your passphrase when locked), and an action card for everything it did, with **Undo** where possible. |
-| 🔮 **Floating orb** | Shows listening / thinking / speaking and your mic level. Click to talk, double-click to open the window, drag to move it. It hides behind full-screen apps. |
-| 🧷 **Tray** | Show the window, mute the microphone, lock, show the orb, set up, quit. |
-| 📜 **Activity** | Everything it did, from the encrypted log, with filters. **This week** shows commands it didn't understand, your corrections and slow steps. |
-| ⚙️ **Settings** | General, Voice, Microphone, Proactive, Security, Privacy, Updates, Safety, Custom commands, Contacts, Plugins. The interface comes in English, Hindi or Bengali, light or dark. |
-
+☀️ Proactive features
+Disabled until enabled by the user.
 <details>
-<summary><b>☀️ Proactive: morning brief, meetings, email alerts</b> (all off until you turn them on)</summary>
-<br>
-
-- **Morning brief** at a time you choose: today's meetings, reminders, the weather and unread email.
-- **Meeting reminders** from your calendar's secret iCal link (Google or Outlook.com), with a **Join** button for Teams / Zoom / Meet.
-- **Email alerts** from people you mark as important.
-- **Quiet hours**, and it waits while you present or are on a call. Ask “what did I miss?” or “why did you tell me this?” at any time.
-
-</details>
-
+<summary><b>Morning brief, meeting reminders and email alerts</b></summary>- Morning brief: At a configured time, Ira can provide today's meetings, reminders, weather and unread-email information, depending on connected services.
+- Meeting reminders: Calendar information can be read from a configured private iCal link for supported Google or Outlook.com calendars. A Join action may open a Teams, Zoom or Google Meet meeting link when one is available.
+- Important-person email alerts: Notifications can be enabled for messages from contacts you mark as important.
+- Quiet hours: Configure times when proactive notifications should be suppressed. Ira can also be configured to wait while you are presenting or on a call.
+- Ask “What did I miss?” or “Why did you tell me this?” to review proactive activity.
+</details>🧩 Plugins
 <details>
-<summary><b>🧩 Plugins</b></summary>
-<br>
+<summary><b>Plugin system and included plugins</b></summary>Plugins are installed from ZIP packages after a permissions prompt. Each plugin runs as a separate program and is expected to pass through the same action-safety checks as built-in commands.
 
-Plugins add commands and install from a `.zip` after a permissions prompt. Each one runs as its own program, and everything it does goes through the same safety checks as built-in commands. Plugins signed by someone other than Ira Assistant get a warning, and unsigned ones are refused. Plugins from Ira Assistant itself: **Notes** (“read my notes”), **Media** (“what's playing”, “spotify lofi beats”) and **WhatsApp** (“message Mum on WhatsApp hello”, always read back and confirmed).
+The documented signing policy warns when a plugin is signed by an entity other than Ira Assistant and refuses unsigned plugins.
 
-</details>
-
+Included Ira Assistant plugins are described as:
+- Notes: “Read my notes.”
+- Media: “What's playing?” or “Spotify lofi beats.”
+- WhatsApp: “Message Mum on WhatsApp: hello.” Messages are read back and require confirmation before sending.
+Only install plugins from sources you trust. Review the requested permissions before approving installation.
+</details>🎧 Audio
 <details>
-<summary><b>🎧 Audio</b></summary>
-<br>
+<summary><b>Audio configuration</b></summary>Setting	Phone-call reference	Ira configuration
+Sample rate	16 kHz	16 kHz
+Low-cut filter	80–100 Hz	100 Hz
+Echo cancellation	On	On
+Noise suppression	On	On
+Automatic gain control	On	Optional
 
-| | Phone call (HD voice) | Ira |
-|---|---|---|
-| Sample rate | 16 kHz | 16 kHz |
-| Low-cut filter | 80–100 Hz | 100 Hz |
-| Echo cancellation, noise suppression | on | on |
-| Automatic gain | on | optional (helps if you sit far away) |
 
-“Clearer voice on laptop speakers” is on by default (Settings › Voice). It cuts the rumble small speakers can't play, lifts the speech range and keeps every sentence equally loud.
-
-</details>
-
-<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
-
-## 🔒 Safety and privacy
-
+The Clearer voice on laptop speakers option is enabled by default in Settings → Voice. It is intended to reduce low-frequency rumble, improve speech intelligibility and make spoken output more consistent.
+</details>🔒 Safety and privacy
 <div align="center">
-<img src="assets/cards.svg" alt="Voice-locked · AES-256-GCM · One safety gate · Undo · Live-voice check · Local by default" width="100%">
-</div>
+<img src="assets/cards.svg" alt="Voice access, encryption, central action checks, undo and local-first processing." width="100%">
+</div>Ira includes several safeguards. Their effectiveness depends on the implementation, operating-system configuration and the permissions granted to the application.
+- Central action checks: Commands are assigned risk levels. Risky actions are read back and require confirmation by voice or through a Yes/No prompt. The default response is No. Shutdown, restart and sign-out are documented as requiring Windows Hello.
+- Undo: “Undo that” or an action card's Undo control can reverse supported actions. The current project description specifies a history of up to 20 actions within a 10-minute window. Not every external or irreversible action can be undone.
+- Encryption: The voiceprint, activity-log details and scheduled reminders are described as encrypted using AES-256-GCM. The calendar link is stored in Windows Credential Manager.
+- Local processing: Speech recognition, voice output and voiceprint matching are designed to run locally. Connected services and online commands may send the information required to those services. Local processing should not be interpreted as meaning that every feature is offline.
+- Crash reports: Crash reports are stored locally and are described as having paths, names, email addresses and spoken content removed.
+- Replay and live-voice checks (since 1.13): Voice unlock and risky spoken actions use checks intended to distinguish a live speaker from replayed audio. When confidence is insufficient, Ira may ask you to repeat a randomly generated phrase.
+- Family and guest modes (since 1.13): Family members can enrol separate voiceprints and use configured limits. Guest mode is off by default and is described as allowing limited requests such as time, weather, general questions and media control.
+- File safety: The file index is encrypted. Password and key files are excluded from indexing. The document-summary model is described as having no tools; document text is treated as content to summarise, not as instructions to execute.
+[!WARNING]
+Voice biometrics and anti-replay checks are not infallible. A sufficiently convincing voice clone or other attack may bypass them. Treat voice unlock as a convenience feature, not as a replacement for your Windows account password, Windows Hello or device security.
 
-- 🛡️ **One safety gate for every action.** Each command has a risk level. Risky ones are read back and confirmed by voice or with Yes / No, and No is the default. Shutdown, restart and log off also need **Windows Hello**.
-- ↩️ **Undo.** “undo that”, or a card's Undo button, reverts the last 20 actions for 10 minutes.
-- 🔐 **Encryption.** The voiceprint, the activity log's details and scheduled reminders are encrypted with **AES-256-GCM**. The calendar link is kept in Windows Credential Manager.
-- 💻 **Local by default.** Speech recognition and the voices run locally. Crash reports stay on the PC, with paths, names, emails and anything you said removed.
-- 🧬 **Replays and fake voices** *(since 1.13)*. Unlocking and risky spoken actions check that the voice is live. A recording of an earlier unlock is caught by its fingerprint, and when Ira is unsure it asks you to say a random phrase (“say: blue forty-seven”).
-- 👨‍👩‍👧 **Family and guests** *(since 1.13)*. Family members get their own voiceprint and limits. Guest mode, off by default, lets unknown voices ask the time or the weather, ask a general question, or control music, and nothing else.
-- 📂 **Your files, safely.** The file index is encrypted, password and key files are never read, and the model that summarises has no tools. Text inside a document can only ever become words in a summary.
-
-> [!WARNING]
-> Voice biometrics can still be fooled by a good enough voice clone. Treat voice unlock as a **convenience lock**, not a replacement for your Windows sign-in.
-
-<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
-
-## 🚀 Updates from this page
-
-Installed copies check this page and **update by themselves**. Updates are signed, and you can **go back to the previous version**.
-
+For sensitive workflows, keep Windows security protections enabled, use a standard user account where possible, and review custom shell commands and plugin permissions carefully.
+🚀 Updates
+Installed copies can check the configured release channel for updates. The project describes its update packages as signed and encrypted, with rollback to the previous version supported.
 ```mermaid
 flowchart LR
-    A[📦 New release<br/>published here] --> B[🖥️ Your Ira<br/>checks for updates]
-    B --> C{🔏 Signature<br/>valid?}
-    C -- No --> X[⛔ Rejected,<br/>nothing installed]
-    C -- Yes --> D{✉️ Invite on<br/>this PC?}
-    D -- No --> Y[🔒 Can't decrypt]
-    D -- Yes --> E[🔓 Decrypt & install]
-    E --> F[✅ Up to date]
+    A["New release published"] --> B["Installed Ira checks for update"]
+    B --> C{"Signature valid?"}
+    C -- "No" --> X["Reject package"]
+    C -- "Yes" --> D{"Valid invite on this PC?"}
+    D -- "No" --> Y["Do not decrypt or install"]
+    D -- "Yes" --> E["Decrypt and install"]
+    E --> F["Updated"]
 ```
+Protection	Purpose
+Signed release	Allows the updater to verify that a package was signed by the expected publisher.
+Encrypted package	Restricts access to package contents to holders of the required decryption material.
+Invite-bound access	Associates access with an invitation issued by the owner.
+Rollback	Allows returning to the previous installed version when the update system supports it.
 
-| Layer | What it does |
-|---|---|
-| 🔏 **Signed** | Each release is signed by the owner. A tampered or unofficial file is refused. |
-| 🔐 **Encrypted** | Release files can't be read without a valid invite. |
-| ✉️ **Invite-bound** | Each invite is issued personally to a named person, for their own use. |
-| ⏪ **Reversible** | You can go back to the previous version. |
 
-<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
-
-## 📁 Where your data lives
-
+Keep the application open or follow its update prompt as instructed. Do not install replacement packages from untrusted sources. Update availability depends on the release channel and the configuration of the installed copy.
+📁 Where your data is stored
+The following locations are the documented default locations. Exact contents may vary by version and enabled features.
 <details>
-<summary><b>Show folders</b></summary>
-<br>
+<summary><b>Show application folders</b></summary>Location	Documented contents
+%APPDATA%\PersonalAssistant	Settings, encrypted voiceprint, activity-log details, reminders, morning-brief data, custom commands and plugin data. Confirmed phrases, the file index, family voiceprints and replay fingerprints are also described as encrypted.
+%LOCALAPPDATA%\PersonalAssistant\Logs	Application logs and crash reports.
+%LOCALAPPDATA%\PersonalAssistant\Cache	Downloaded speech, voice and wake-phrase models, plus WordNet data.
 
-| Folder | Contents |
-|---|---|
-| `%APPDATA%\PersonalAssistant` | Settings, the encrypted voiceprint, the activity log (details encrypted), reminders and the brief, your custom commands and plugin data. Phrases you confirmed, the file index, family voiceprints and replay fingerprints (never audio) are all stored encrypted. |
-| `%LOCALAPPDATA%\PersonalAssistant\Logs` | App logs and crash reports with personal details removed. |
-| `%LOCALAPPDATA%\PersonalAssistant\Cache` | Downloaded models (speech, voices, wake phrase) and WordNet. |
 
-</details>
+</details>🧭 Known limitations
+The following items are not described as fully available in the current release:
+- Synthetic-voice detector (AASIST-L): Optional and not yet integrated as a complete detector. Replay checks and random-phrase challenges are described as available without it.
+- Separate family settings: Family members currently share the owner's settings and custom commands.
+- Microsoft Store / winget distribution: A signed installer for these distribution channels is still under evaluation.
+- macOS: Not currently supported. Windows is the supported platform.
+©️ Copyright
+Copyright © 2026 Rahul Ghosh. All rights reserved.
 
-<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
-
-## 🧭 Not yet
-
-- **Synthetic-voice detector** (AASIST-L): optional. Without it, the replay check and the random-phrase challenge still work.
-- **Separate settings and custom commands for family members:** members share the owner's settings and commands for now.
-- **A signed installer for other PCs** (Microsoft Store / winget): evaluated, decision pending.
-- **macOS:** only a plan. Windows is the platform today.
-
-<p align="center"><img src="assets/divider.svg" width="100%" alt=""></p>
-
-## ©️ Copyright
-
-**Copyright © 2026 Rahul Ghosh. All rights reserved.**
-
-No permission is given to use, copy, modify, share or distribute this software, in whole or in part, without the owner's written permission. An invite counts as permission for the person named in it, for their own use.
-
-<div align="center">
-<br>
-<img src="assets/footer.svg" alt="Ira Assistant · Private · Signed · Encrypted · © 2026 Rahul Ghosh" width="100%">
-</div>
+No permission is granted to use, copy, modify, publish, share or distribute this software, in whole or in part, without prior written permission from the owner. An invitation grants permission only to the person named in it and only for the use specified by the owner.
+<div align="center"><img src="assets/footer.svg" alt="Ira Assistant · Private · Signed · Encrypted · Copyright 2026 Rahul Ghosh" width="100%"></div>
